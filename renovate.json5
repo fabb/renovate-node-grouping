@@ -1,0 +1,14 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["config:base"],
+    "ignoreDeps": [],
+    "packageRules": [
+      {
+        matchDatasources: ['docker'],
+        matchPackageNames: ['node'],
+        // matchPackagePatterns: ['/node$'],
+        excludePackageNames: ['calico/node', 'kindest/node'],
+        commitMessageTopic: 'Node.js custom',
+      },
+    ]
+}
