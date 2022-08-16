@@ -1,6 +1,6 @@
 job working:
     stage: maintenance
-    image: node:16.15.1
+    image: node:16.16.0
 
 job not working:
     stage: maintenance
